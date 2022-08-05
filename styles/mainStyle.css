@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    background-color: rgb(0, 0, 0);
+    background-position: center;
+    background-image: url("https://1.bp.blogspot.com/-zvvZFrfFQ6k/XGHkab95xcI/AAAAAAAACdY/9HyNnoPd1mEtM0o3LG3M1hF6K9z2inW3wCKgBGAs/w0/mountain-landscape-abstract-4K-151.jpg");
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+    background-size: cover;
+    letter-spacing: 6vw;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow-x: hidden;
+    height: 100vh;
+    background-position: relative;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    animation: title-load 2s forwards;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    font-weight: bold;
+    /* height: 85%; */
+    text-shadow: 2vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* margin: 1vw; */
+}
+
+.head2 {
+    font-size: 1vw;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    /* top: 25%; */
+    color: rgb(255, 255, 255);
+    width: 100%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    /* top: 50%; */
+    letter-spacing: .4vw;
+    animation: bouncing 1.5s ease-in-out infinite;
+    animation-delay: 3s;
+    /* visibility: hidden; */
+    /* animation-duration: 1s; */
+}
+
+header img {
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    top: 100%;
+    width: 3%;
+    height: 3%;
+    top: 40%;
+    /* size: 0.01rem; */
+    animation-delay: 2s;
+    z-index: 2;
+
+}
+
+.scroller {
+    display: flex;
+    position: relative;
+    top: 30%;
+}
+
+.svg {
+    /* position: relative;
+    top: 2rem; */
+    filter: invert(100%);
+    opacity: 1;
+    height: 1.21875vw;
+    width: 1.21875vw;
+    animation: bouncing 1.5s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.fadeIn {
+    position: relative;
+    opacity: 0;
+    animation: fadeUpArrow 1s forwards;
+    animation: fadeUpText 1s forwards;
+    animation-delay: 3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.fadeDown {
+    position: relative;
+    opacity: 0;
+    animation: fadeDown 2s forwards;
+    animation-delay: 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.hideScrolls {
+    animation: hidetext 1s forwards;
+    animation: hideArrow 1s forwards;
+}
+
+.revealScrolls {
+    animation: fadeUpText 1s forwards;
+    animation: fadeUpArrow 1s forwards;
+}
+
+.fadeRight {
+    /* opacity: 0; */
+    animation: fadeRight 1s forwards;
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%)
+    }
+}
+
+@keyframes hideText {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes hideArrow {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes title-load {
+    from {
+        letter-spacing: 6vw;
+    }
+
+    to {
+        letter-spacing: 2vw;
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUpText {
+    from {
+        opacity: 0;
+        transform: translateY(-100);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUpArrow {
+    from {
+        opacity: 0;
+        transform: translateY(-100);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bouncing {
+    0% {
+        /* transform:translateY(0%) */
+    }
+
+    50% {
+        transform: translateY(-70%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+section {
+    background-color: rgb(71, 86, 121);
+    background-position: center;
+    display: flex;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.para {
+    color: rgba(255, 255, 255, 0.465);
+    font-size: 1.25vw;
+    width: 75%;
+
+    position: relative;
+    line-height: 2.5vw;
+    /* height: 70%; */
+    opacity: 0;
+    text-align: center;
+    bottom: 10%;
+    justify-content: center;
+    margin-block-end: 0%;
+    margin-block-start: 0%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head1 {
+    display: flex;
+    flex-direction: row;
+    bottom: 40%;
+    position: relative;
+    /* bottom: 40%; */
+    font-weight: bold;
+    letter-spacing: 1rem;
+    /* bottom: 8rem; */
+    margin-bottom: 2vw;
+    text-align: left;
+    width: 100%;
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    /* position: relative; */
+}
+
+.scroll-wrapper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /* height: 100; */
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    /* width: 100%; */
+}
+
+section strong {
+    white-space: nowrap;
+    display: flex;
+}
+
+.whole-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.mini-container-left {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.mini-container-right {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.me-image {
+    height: 30vw;
+    margin-right: 5vw;
+    position: relative;
+    top: 10%;
+    filter: drop-shadow(-1rem .5rem .5rem rgba(27, 27, 27, 0.658));
+}
