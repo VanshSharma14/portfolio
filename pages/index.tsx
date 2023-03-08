@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import "animate.css";
 import Button from "../styles/button.module.css";
+import Page from "../styles/page.module.css";
 import Styles from "../styles/main.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -31,6 +32,8 @@ const Home: NextPage = () => {
       </Head>
       <div>
         <header>
+        {/* <div className={Page.basePage} role="basePage"></div> */}
+
           <h1>Vansh Sharma</h1>
           <div className="fadeDown">
             <button className={Button.button} id="projects" role="button">
@@ -119,19 +122,11 @@ const Home: NextPage = () => {
         <footer>
           <h1>wooooo!</h1>
         </footer>
-
-        {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossOrigin="anonymous" referrerPolicy="no-referrer"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A==" crossOrigin="anonymous" referrerPolicy="no-referrer"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossOrigin="anonymous" referrerPolicy="no-referrer"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js" integrity="sha512-pvDW4tehKKsohH97164HwKwRGFpzayEFWTVbk8HuUoLIQ7Jp+WLN5XYokVuoCj2aT6dy8ihbW8SRTG1k0W4mSQ==" crossOrigin="anonymous" referrerPolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js" integrity="sha512-tSIDeirKC6suYILHqqPuZH3s0MvD4a5vCHXhBIcdmq4gQXZ2IB3fEYA5x2f3D2p/CbSqzKEvuTEVbS5VZ2u+ew==" crossOrigin="anonymous" referrerPolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js" integrity="sha512-ocsFo48WU8Xq6Y1Lwi7psXRAujG9E4TKNR4q1DbrKzaaxOMTEoao/a+mDoB+cYzY4lwbyxvqjkp/ZA1/MNlfsg==" crossOrigin="anonymous" referrerPolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js" integrity="sha512-plyexAULVlTExvDn2yUZFJV9F8q+53MC/GpU9dEuNGXmrrI3J8Rcffjvxg3OOBALBvF+UILPLIBEoCeF2maqTQ==" crossOrigin="anonymous" referrerPolicy="no-referrer"></script>
-        <script src="../scripts/app.js"/> */}
         <script src="/static/scripts/scrollTrigger.tsx" />
         <script src="/static/scripts/scroll-invis.tsx" />
       </div>
     </div>
+    
   );
 };
 
